@@ -1,5 +1,5 @@
 package homework.lectures.lecture1;
-
+//**********@Checked***************//
 public class MathOperations {
     public static void main(String[] args){
         int a = 5;
