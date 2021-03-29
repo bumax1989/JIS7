@@ -1,5 +1,5 @@
 package homework.lectures.lecture2;
-
+//**********@Checked***************//
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
