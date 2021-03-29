@@ -1,5 +1,5 @@
 package homework.lectures.lecture1;
-
+//**********@Checked***************//
 import java.util.Random;
 
 public class RandomGenerator {
