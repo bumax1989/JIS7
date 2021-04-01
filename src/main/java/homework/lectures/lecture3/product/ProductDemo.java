@@ -1,4 +1,4 @@
-package homework.lectures.product;
+package homework.lectures.lecture3.product;
 
 public class ProductDemo {
     public static void main(String[] args) {
