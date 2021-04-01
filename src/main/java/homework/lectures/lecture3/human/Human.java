@@ -1,4 +1,4 @@
-package homework.lectures.lecture3.Human;
+package homework.lectures.lecture3.human;
 
 public class Human {
     private int age;

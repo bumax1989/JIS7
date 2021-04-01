@@ -1,4 +1,4 @@
-package homework.lectures.lecture3.Encoder;
+package homework.lectures.lecture3.encoder;
 
 public class Encoder {
 

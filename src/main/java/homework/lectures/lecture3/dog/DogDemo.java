@@ -1,4 +1,4 @@
-package homework.lectures.lecture3.Dog;
+package homework.lectures.lecture3.dog;
 
 public class DogDemo {
     public static void main(String[] args) {

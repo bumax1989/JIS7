@@ -1,4 +1,4 @@
-package homework.lectures.lecture3.Circle;
+package homework.lectures.lecture3.circle;
 
 public class CircleDemo {
     public static void main(String[] args) {
