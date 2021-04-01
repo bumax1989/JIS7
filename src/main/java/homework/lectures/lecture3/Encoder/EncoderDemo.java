@@ -3,6 +3,7 @@ package homework.lectures.lecture3.Encoder;
 public class EncoderDemo {
 
     public static void main(String[] args) {
+
         Encoder decoder = new Encoder('A');
         Encoder encoder = new Encoder((short) 65);
 
@@ -14,6 +15,6 @@ public class EncoderDemo {
 
         encoder.encode(encoder.getCode());
         decoder.decode(decoder.getSymbol());
-    }
 
+    }
 }
