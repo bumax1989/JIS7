@@ -1,4 +1,4 @@
-package homework.lectures.lecture4;
+package homework.lectures.lecture4.signComporator;
 
 import java.io.BufferedReader;
 import java.io.IOException;
