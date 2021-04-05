@@ -1,5 +1,5 @@
 package homework.lectures.lecture4.stock;
-
+//********Checked***********
 import org.apache.log4j.Logger;
 
 public class Stock {
