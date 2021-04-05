@@ -1,5 +1,5 @@
 package homework.lectures.lecture4.phraseAnalyser;
-
+//********Checked***********
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
