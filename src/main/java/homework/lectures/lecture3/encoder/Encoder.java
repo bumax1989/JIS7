@@ -1,5 +1,5 @@
 package homework.lectures.lecture3.encoder;
-
+//********Checked***********
 public class Encoder {
 
     private short code;
