@@ -1,5 +1,5 @@
 package homework.lectures.lecture3.human;
-
+//********Checked***********
 public class Human {
     private int age;
     private String name;
