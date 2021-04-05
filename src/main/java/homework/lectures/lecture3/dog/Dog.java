@@ -1,5 +1,5 @@
 package homework.lectures.lecture3.dog;
-
+//********Checked***********
 public class Dog {
     private int age;
     private String name;
