@@ -1,5 +1,5 @@
 package homework.lectures.lecture3.product;
-
+//********Checked***********
 public class Product {
     private String name;
     private double regularPrice;
