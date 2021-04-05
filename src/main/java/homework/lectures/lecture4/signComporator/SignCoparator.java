@@ -12,6 +12,7 @@ public class SignCoparator {
         int inputNumber = Integer.parseInt(reader.readLine());
 
         System.out.println(compare(inputNumber));
+        reader.close();
     }
 
     public static String compare(int number) {
