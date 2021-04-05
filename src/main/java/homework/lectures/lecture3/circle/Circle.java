@@ -1,5 +1,5 @@
 package homework.lectures.lecture3.circle;
-
+//********Checked***********
 public class Circle {
     private final double PI = Math.PI;
     private double radius;
