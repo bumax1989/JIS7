@@ -1,6 +1,7 @@
 package homework.lectures.lecture7_collections.unique_word_vocabulary;
 
 import org.apache.log4j.Logger;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -11,7 +12,7 @@ public class UniqueWordVocabulary {
 
     public void addWord(String word) {
 
-        if (!word.equals("")) {
+        if (word != null && !word.isEmpty()) {
             vocabularySet.add(word);
         } else
             logger.info("Incorrect input!");
