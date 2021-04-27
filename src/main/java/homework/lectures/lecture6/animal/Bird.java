@@ -1,6 +1,6 @@
 package homework.lectures.lecture6.animal;
 
-public class Bird extends Animal {
+public abstract class Bird extends Animal {
     private String wingsLength;
 
     public Bird() {
@@ -11,18 +11,6 @@ public class Bird extends Animal {
         this.wingsLength = wingsLength;
     }
 
-    public void flying() {
-        System.out.println("Bird is flying");
-    }
-
-    @Override
-    public void eating() {
-        System.out.println("Bird is eating");
-    }
-
-    @Override
-    protected void sleeping() {
-        System.out.println("Bird is sleeping");
-    }
+    public abstract void flying();
 
 }

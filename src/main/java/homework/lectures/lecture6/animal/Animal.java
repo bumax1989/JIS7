@@ -2,17 +2,17 @@ package homework.lectures.lecture6.animal;
 
 import java.util.Objects;
 
-public class Animal {
+public abstract class Animal {
     private Integer age;
     private String name;
     private String color;
     private String weight;
     private String height;
 
-    public Animal() {
+    Animal() {
     }
 
-    public Animal(Integer age, String name, String color, String weight, String height) {
+    Animal(Integer age, String name, String color, String weight, String height) {
         this.age = age;
         this.name = name;
         this.color = color;
@@ -20,15 +20,11 @@ public class Animal {
         this.height = height;
     }
 
-    public void eating(){
-        System.out.println("Animal is eating");
-    }
+    public abstract void eating();
 
-    protected void sleeping(){
-        System.out.println("Animal is sleeping");
-    }
+    protected abstract void sleeping();
 
-    private void running(){
+    private void running() {
         System.out.println("Animal is running");
     }
 

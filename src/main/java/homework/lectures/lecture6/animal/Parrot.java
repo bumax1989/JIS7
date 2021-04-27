@@ -15,9 +15,12 @@ public class Parrot extends Bird {
         System.out.println("Parrot is eating");
     }
 
+    @Override
+    protected void sleeping() {
+        System.out.println("The parrot is sleeping");
+    }
+
     public void talking() {
         System.out.println("Parrot is talking");
     }
-
-
 }
