@@ -3,8 +3,9 @@ package homework.lectures.lecture7_collections.library;
 import java.util.Objects;
 
 public class Book {
-    private String author;
-    private String bookName;
+
+    private final String author;
+    private final String bookName;
 
     public Book(String bookName, String author) {
         this.author = author;

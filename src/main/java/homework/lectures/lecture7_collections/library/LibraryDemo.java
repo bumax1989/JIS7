@@ -1,5 +1,7 @@
 package homework.lectures.lecture7_collections.library;
 
+import homework.lectures.lecture7_collections.library.service.BookService;
+import homework.lectures.lecture7_collections.library.service.BookServiceImpl;
 import org.apache.log4j.BasicConfigurator;
 
 public class LibraryDemo {
@@ -10,19 +12,8 @@ public class LibraryDemo {
         Book bookTwo = new Book("Anna Karenina", "Leo Tolstoy");
         Book bookThree = new Book("Karenina", "Leo Tolst");
 
-        Library library = new Library();
+        BookService bookService = new BookServiceImpl();
 
-        library.addBook(bookOne);
-        library.addBook(bookTwo);
-        library.addBook(bookThree);
-
-        library.findByName("War and Peace");
-        library.findByName("War and Peace1");
-        library.findByAuthor("Leo Tolstoy");
-
-        library.deleteBook(bookOne);
-
-        library.findByAuthor("Leo Tolstoy");
 
     }
 }
