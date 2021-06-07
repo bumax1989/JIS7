@@ -1,12 +1,16 @@
 package homework.lectures.lecture8_streams.sort_products;
 
+import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class App {
+    public static final Logger log = Logger.getLogger(App.class);
+
     public static void main(String[] args) {
         List<Product> productList = new ArrayList<>() {{
             add(new Product("Milk", 3.45, 15.3));
@@ -20,21 +24,12 @@ public class App {
             add(null);
         }};
 
-        List<Product> sortedPriceZeroDiscount = productList.stream()
+        List<Product> sortedProductsByDiscountAndPrice = productList.stream()
                 .filter(Objects::nonNull)
-                .filter(it -> it.getDiscount() == 0)
-                .sorted((o1, o2) -> o1.getPrice().compareTo(o2.getPrice()))
+                .sorted(Comparator.comparing(Product::getDiscount)
+                        .thenComparing(Product::getPrice))
                 .collect(Collectors.toList());
 
-        List<Product> sortedPriceWithDiscount = productList.stream()
-                .filter(Objects::nonNull)
-                .filter(it -> it.getDiscount() > 0)
-                .sorted((o1, o2) -> o1.getPrice().compareTo(o2.getPrice()))
-                .collect(Collectors.toList());
-
-        List<Product> sortedListByPrice = Stream.concat(sortedPriceZeroDiscount.stream(), sortedPriceWithDiscount.stream())
-                .collect(Collectors.toList());
-        System.out.println(sortedListByPrice);
-
+        log.info(sortedProductsByDiscountAndPrice);
     }
 }
