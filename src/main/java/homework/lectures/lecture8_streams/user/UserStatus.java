@@ -10,5 +10,5 @@ import lombok.Getter;
 public enum UserStatus {
     GUEST,
     USER,
-    VIPUSER
+    VIP_USER
 }

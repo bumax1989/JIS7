@@ -18,7 +18,7 @@ public class UserService {
                 .filter(Objects::nonNull)
                 .peek(it -> {
                     if (it.getUserStatus() == UserStatus.USER && it.isActive()) {
-                        it.setUserStatus(UserStatus.VIPUSER);
+                        it.setUserStatus(UserStatus.VIP_USER);
                     }
                     if (it.getUserStatus() == UserStatus.GUEST) {
                         it.setUserStatus(UserStatus.USER);
@@ -33,7 +33,6 @@ public class UserService {
     // переходит в guest
 
     public static List<User> sortUsersByNickName(List<User> userList) {
-
         return userList.stream()
                 .filter(Objects::nonNull)
                 .sorted(Comparator.comparing(User::getNickName))

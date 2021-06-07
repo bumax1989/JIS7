@@ -1,4 +1,5 @@
 package homework.lectures.lecture8_streams.user;
+
 import org.apache.log4j.Logger;
 
 public class App {
