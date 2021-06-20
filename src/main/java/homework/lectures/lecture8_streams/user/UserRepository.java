@@ -3,7 +3,7 @@ package homework.lectures.lecture8_streams.user;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserImplementationService {
+public class UserRepository {
 
     //TODO Создать модель User с полями id,  имя, фамилия, никнейм, возраст, емайл, пароль,
     // статус, флаг isActive. Статусы юзера могут быть: GUEST, USER, VIP USER. Создайте  юзеров

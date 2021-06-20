@@ -13,7 +13,7 @@ public class UserService {
     // юзеры имеют статус guest, то засетать им статус USER  и перевести флаг isActive в true,
     // а если уже был USER и isActive то перевести в VIP USER.
 
-    public static List<User> changeStatusAndFlag(List<User> userList) {
+    public static List<User> updateUserStatusAndFlag(List<User> userList) {
         return userList.stream()
                 .filter(Objects::nonNull)
                 .peek(it -> {
@@ -32,7 +32,7 @@ public class UserService {
     // были юзеры старше 18 лет, если младше то тем юзерам флаг меняется на isActive false и статус
     // переходит в guest
 
-    public static List<User> sortUsersByNickName(List<User> userList) {
+    public static List<User> sortUsersByNickNameWithAgeMoreThenEighteenAndSetIsActiveFalseAndSetUserStatusToGuest(List<User> userList) {
         return userList.stream()
                 .filter(Objects::nonNull)
                 .sorted(Comparator.comparing(User::getNickName))
@@ -48,7 +48,7 @@ public class UserService {
 
     //TODO 3. Написать метод который выводит количество юзеров со статусом USER и флагом true
 
-    public static List<User> getUsersWithStatusUSERAndIsActiveTRUE(List<User> userList) {
+    public static List<User> getUsersWithStatusUserAndIsActiveTrue(List<User> userList) {
         return userList.stream()
                 .filter(Objects::nonNull)
                 .filter(it -> it.getUserStatus() == UserStatus.USER && it.isActive())

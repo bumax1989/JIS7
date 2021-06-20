@@ -8,14 +8,14 @@ public class App {
 
     public static void main(String[] args) {
 
-        UserImplementationService userImplementationService = new UserImplementationService();
+        UserRepository userRepository = new UserRepository();
 
         log.info("__________1___________");
-        log.info(UserService.changeStatusAndFlag(userImplementationService.userList));
+        log.info(UserService.updateUserStatusAndFlag(userRepository.userList));
         log.info("__________2___________");
-        log.info(UserService.sortUsersByNickName(userImplementationService.userList));
+        log.info(UserService.sortUsersByNickNameWithAgeMoreThenEighteenAndSetIsActiveFalseAndSetUserStatusToGuest(userRepository.userList));
         log.info("__________3___________");
-        log.info(UserService.getUsersWithStatusUSERAndIsActiveTRUE(userImplementationService.userList));
+        log.info(UserService.getUsersWithStatusUserAndIsActiveTrue(userRepository.userList));
 
 
     }
