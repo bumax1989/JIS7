@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="homework.lectures.lecture10_hibernate.without_annotations.entity.User" table="users">
+        <id name="id" type="long" column="id">
+            <generator class="identity"/>
+            <!-- //генерирует автоматически id(первичный ключ). может быть identity, hilo, sequence. Либо указываем native и hibernate сам выбирает алгоритм, в зависимости от возможностей БД -->
+        </id>
+        <property name="firstName" column="first_name" type="string"/>
+        <property name="lastName" column="last_name" type="string"/>
+        <property name="username" column="username" type="string"/>
+        <property name="email" column="email" type="string"/>
+    </class>
+</hibernate-mapping>
